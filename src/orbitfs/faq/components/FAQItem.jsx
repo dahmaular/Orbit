@@ -3,7 +3,7 @@
  */
 import React, { useState } from "react";
 
-const FAQItem = ({ question, answer }) => {
+const FAQItem = ({ question, answer, list, showlist }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -23,6 +23,11 @@ const FAQItem = ({ question, answer }) => {
       {isOpen && (
         <div className="faq-answer">
           <p>{answer}</p>
+          <ul>
+            {list?.map((lst, index) => (
+              <li key={index}>{lst}</li>
+            ))}
+          </ul>
         </div>
       )}
     </div>

@@ -14,13 +14,13 @@
 
 .service-title-new {
   font-size: 20px;
-  color: #fff;
+  color: #000;
   margin-bottom: 16px;
 }
 
-.value-description {
+.service-value-description {
   font-size: 20px;
-  color: #fff;
+  color: #000;
 }
 
 .service-title {
@@ -54,5 +54,6 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    max-width: 991px;
   }
 }

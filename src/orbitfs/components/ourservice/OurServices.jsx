@@ -64,8 +64,8 @@ const OurServices = () => {
               className="service-icon"
             />
             <div className="service-content">
-              <h3 className="service-title">{service.title}</h3>
-              <p className="service-description">{service.description}</p>
+              <h3 className="home-service-title">{service.title}</h3>
+              <p className="home-service-description">{service.description}</p>
             </div>
             <a href="#" className="service-link">
               Learn more

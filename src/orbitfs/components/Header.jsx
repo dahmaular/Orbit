@@ -11,7 +11,9 @@ const Header = () => {
     <header className="header">
       <div className="header-container">
         <div className="header-content">
-          <Logo />
+          <a href="/">
+            <Logo />
+          </a>
           <div className="links-actions">
             <Navigation />
             <div className="actions">

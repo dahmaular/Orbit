@@ -5,24 +5,34 @@ import React from "react";
 import Logo from "./Logo";
 
 const Footer = () => {
-  const quickLinks = ["About Us", "Services", "FAQs", "Careers", "Contact Us"];
+  const quickLinks = [
+    { title: "About Us", link: "/about" },
+    { title: "Services", link: "/services" },
+    { title: "FAQs", link: "/faq" },
+    { title: "Blogs", link: "/blog" },
+    { title: "Contact Us", link: "/contact" },
+  ];
   const contactInfo = ["Phone number", "Email Address", "Office Location"];
   const socialIcons = [
     {
       src: "https://cdn.builder.io/api/v1/image/assets/TEMP/5016c179157fffa49eb37c28d06331656b6c16f06b44d92763fad6affcca08fb?apiKey=0dc91187d1fc4cb3931d3d7b27a4a892&",
       alt: "Facebook",
+      link: "https://www.facebook.com/share/1B6gh2XtZX/?mibextid=wwXIfr",
     },
     {
       src: "https://cdn.builder.io/api/v1/image/assets/TEMP/0d46c525aeaa42cbe298b32ad6b0e658d524d576bad17a423a7eb79a98616b0f?apiKey=0dc91187d1fc4cb3931d3d7b27a4a892&",
       alt: "Twitter",
+      link: "https://x.com/orbitfinancial_?s=21&t=rw9hvtVHbEjoICem_BUesA",
     },
     {
       src: "https://cdn.builder.io/api/v1/image/assets/TEMP/51e1fd097e6005111ac1800ba3e984f2efb782bda8ed2133df151e6ac2caa881?apiKey=0dc91187d1fc4cb3931d3d7b27a4a892&",
       alt: "Instagram",
+      link: "https://www.instagram.com/orbitfinancialgroup?igsh=MWRsM3doaWt5eGI1dw==",
     },
     {
       src: "https://cdn.builder.io/api/v1/image/assets/TEMP/b306f1f92ccf93038b2944e429baaa93296ad05a9d5ccb60eb49acdef6a304eb?apiKey=0dc91187d1fc4cb3931d3d7b27a4a892&",
       alt: "LinkedIn",
+      link: "https://www.linkedin.com/company/orbit-financial-services-limited",
     },
   ];
 
@@ -39,8 +49,8 @@ const Footer = () => {
               <ul className="footer-list">
                 {quickLinks.map((link, index) => (
                   <li key={index}>
-                    <a href="#" className="footer-link">
-                      {link}
+                    <a href={link.link} className="footer-link">
+                      {link.title}
                     </a>
                   </li>
                 ))}
@@ -60,7 +70,7 @@ const Footer = () => {
               <h4 className="footer-heading">Follow us</h4>
               <div className="social-icons">
                 {socialIcons.map((icon, index) => (
-                  <a key={index} href="#" className="social-link">
+                  <a key={index} href={icon.link} target="_blank" className="social-link">
                     <img
                       loading="lazy"
                       src={icon.src}
@@ -83,7 +93,8 @@ const Footer = () => {
             </a>
           </div>
           <p className="copyright">
-            © Copyright 2024 Orbit All rights reserved.
+            © Copyright 2024 Orbit All rights reserved. Crafted by Codakraft
+            Tech.
           </p>
         </div>
       </div>

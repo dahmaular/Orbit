@@ -4,21 +4,192 @@
 import React from "react";
 import FAQItem from "./FAQItem";
 
-const faqData = [
+export const faqList = [
+  "Microloans for small business growth.",
+  "Sustainable investing opportunities.",
+  "Invoice discounting to improve cash flow.",
+  "Green financing for environmentally sustainable projects.",
+];
+
+export const faqData = [
   {
-    question: "What is Orbit Financial Services",
+    question: "What does Orbit Financial Services offer?",
     answer:
-      "Orbit Financial Services Limited (OFSL) was founded with the mission to empower Nigerian small businesses by providing access to funds through innovative and customer-centric financial solutions.",
+      "We provide a range of financial solutions tailored to empower Nigeria's small businesses, including:\n Microloans for small business growth.",
+
+    list: faqList,
+  },
+  {
+    question: "What is Orbit Financial’s value proposition?",
+    answer:
+      "Our philosophy is Help First, Sell Second. We focus on building relationships, offering value, and delivering personalized solutions with transparency. Our customer-centric approach ensures we meet the specific needs of every client, while keeping the process simple and seamless through our AI-driven platform.",
+  },
+  {
+    question:
+      "How is Orbit Financial Services different from traditional lenders?",
+    answer:
+      "We combine technology and personalization to serve those underserved by traditional banks. Here’s how we stand out:",
+    list: [
+      "AI-powered lending that’s fast, efficient, and secure.",
+      "Tailored solutions for unique financial needs, from microloans to green financing.",
+      "Transparency and trust, with no hidden fees or surprises.",
+    ],
   },
   // Add more FAQ items here
 ];
 
-const FAQList = () => (
-  <div className="faq-list">
-    {faqData.map((faq, index) => (
-      <FAQItem key={index} question={faq.question} answer={faq.answer} />
-    ))}
-  </div>
-);
+export const microloansData = [
+  {
+    question: "Who can apply for a loan with Orbit?",
+    answer: "We serve:",
+    list: [
+      "Entrepreneurs needing quick funding without collateral.",
+      "Small business owners seeking to scale.",
+      "Contractors who need fast cash to complete projects.",
+      "Individuals facing immediate financial needs with the ability to repay.",
+    ],
+  },
+  {
+    question: "What is the loan application process like?",
+    answer: "Our process is fully digital and takes just a few minutes:",
+    list: [
+      "Visit our website and click Apply for a Loan.",
+      "Fill out the application with basic details about your business or personal financial needs.",
+      "Our AI-driven system evaluates your application in real-time.",
+      "Get approved and receive your funds swiftly!",
+    ],
+  },
+  {
+    question: "Is there a minimum or maximum loan amount?",
+    answer:
+      "We tailor our loans to meet your specific financial situation. Loan amounts depend on the product and your capacity to repay, assessed through our advanced AI-powered credit scoring system.",
+  },
+  {
+    question: "What kind of technology do you use to streamline the process?",
+    answer: "We leverage AI for:",
+    list: [
+      "Automated credit scoring using alternative data sources.",
+      "Real-time fraud detection and risk management.",
+      "Personalized loan offers that fit your exact needs.",
+      "A seamless digital experience, available 24/7, with easy navigation and high-level security.",
+    ],
+  },
+  {
+    question: "What are the eligibility criteria for a loan?",
+    answer: "Eligibility varies based on the product, but typically includes:",
+    list: [
+      "A viable business or source of income.",
+      "Proof of revenue or capacity to repay.",
+      "Meeting any specific criteria outlined for products like green financing or invoice discounting.",
+    ],
+  },
 
-export default FAQList;
+  // Add more FAQ items here
+];
+
+export const investmentData = [
+  {
+    question: "What is Investment",
+    answer:
+      "Orbit Financial Services Limited (OFSL) was founded with the mission to empower Nigerian small businesses by providing access to funds through innovative and customer-centric financial solutions.",
+  },
+  // {
+  //   question: "What is the difference between loan and microloan",
+  //   answer:
+  //     "Orbit Financial Services Limited (OFSL) was founded with the mission to empower Nigerian small businesses by providing access to funds through innovative and customer-centric financial solutions.",
+  // },
+  // Add more FAQ items here
+];
+
+export const invoicingData = [
+  {
+    question: "What is Invoicing",
+    answer:
+      "Orbit Financial Services Limited (OFSL) was founded with the mission to empower Nigerian small businesses by providing access to funds through innovative and customer-centric financial solutions.",
+  },
+  // {
+  //   question: "What is the difference between loan and microloan",
+  //   answer:
+  //     "Orbit Financial Services Limited (OFSL) was founded with the mission to empower Nigerian small businesses by providing access to funds through innovative and customer-centric financial solutions.",
+  // },
+  // Add more FAQ items here
+];
+
+export const loanRepaymentData = [
+  {
+    question: "What are the terms and conditions for your loans?",
+    answer:
+      "You can find our detailed terms and conditions, including loan terms, interest rates, and repayment schedules, on the Terms and Conditions section of our website. We ensure all terms are transparent and clearly communicated before you proceed with any financial agreement.",
+  },
+  // {
+  //   question: "What is the difference between loan and microloan",
+  //   answer:
+  //     "Orbit Financial Services Limited (OFSL) was founded with the mission to empower Nigerian small businesses by providing access to funds through innovative and customer-centric financial solutions.",
+  // },
+  // Add more FAQ items here
+];
+
+export const sustainabilityData = [
+  {
+    question: "Are there any promotions or special offers?",
+    answer:
+      "Yes! We occasionally run limited-time offers on specific loan products, providing exclusive interest rates or customized loan terms. Stay tuned to our website or subscribe for updates to benefit from these promotions.",
+  },
+  {
+    question: "How does Orbit ensure data security?",
+    answer:
+      "We take your security seriously. Our platform uses end-to-end encryption, secure payment gateways, and biometric authentication to protect your information and transactions.",
+  },
+  {
+    question: "How do I contact Orbit Financial Services?",
+    answer: "You can reach us through:",
+    list: [
+      "Phone: 08091001000",
+      "Email: hello@orbitfinancial.ng",
+      "Live chat on our website",
+      "Office locations: Check our Contact Us page for operating hours and addresses.",
+    ],
+  },
+
+  {
+    question: "Who typically uses Orbit Financial’s services?",
+    answer: "Our services are designed for:",
+    list: [
+      "Small business owners needing collateral-free loans.",
+      "Entrepreneurs with solid business ideas but lacking traditional bank access.",
+      "Contractors and individuals needing quick financial solutions to overcome immediate challenges.",
+    ],
+  },
+  {
+    question: "What kind of customer support do you offer?",
+    answer:
+      "Our Customer Support team is available via phone, email, and live chat to assist with any inquiries. Visit the Contact Us page for more details.",
+  },
+  {
+    question: "What is Orbit Financial Services’ tagline?",
+    answer: `"Empowering Nigeria’s Small Businesses." We aim to fuel growth and opportunity for small businesses across Nigeria.`,
+  },
+  {
+    question: "What makes Orbit’s digital experience unique?",
+    answer: "Our platform is designed for a frictionless user experience:",
+    list: [
+      "Easy-to-use interface for quick applications.",
+      "24/7 access to your account and services.",
+      "Customer testimonials and a star rating system so you can see how we’ve helped others succeed.",
+    ],
+  },
+  {
+    question: "How does Orbit contribute to financial inclusion?",
+    answer: `Orbit Financial Services ensures that small businesses and individuals who don’t meet traditional banking requirements can still access loans. We aim to close the gap in Nigeria’s retail lending space, providing solutions for the 70% of small businesses that don’t have access to formal funding.`,
+  },
+];
+
+// const FAQList = () => (
+//   <div className="faq-list">
+//     {faqData.map((faq, index) => (
+//       <FAQItem key={index} question={faq.question} answer={faq.answer} />
+//     ))}
+//   </div>
+// );
+
+// export default FAQList;

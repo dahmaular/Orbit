@@ -61,7 +61,7 @@ function ContactForm() {
           display: flex;
           flex-direction: column;
           gap: 31px;
-          width: 100%;
+          width: 50%;
         }
         .form-group {
           display: flex;
@@ -105,7 +105,10 @@ function ContactForm() {
         }
         @media (max-width: 991px) {
           .primary-button {
-            padding: 0 20px;
+            padding: 20px 20px;
+          }
+          .contact-form {
+            width: 100%;
           }
         }
       `}</style>

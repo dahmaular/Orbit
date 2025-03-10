@@ -81,6 +81,10 @@
 
   .nav-items.open {
     max-height: 300px; /* Adjust this value based on the number of items */
+    width: 30%;
+    position: absolute;
+    top: 80px;
+    background-color: #F2FBFA;
   }
 
   .nav-item {

@@ -110,11 +110,12 @@
     padding: 104px 0;
   }
   
-  .section-title {
+  .about-section-title {
     color: var(--orbit-color-style-slate---neutral-slate---neutral-700);
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 8px;
+    text-align: center;
   }
   
   .section-description {
@@ -125,7 +126,7 @@
   
   /* Story Section styles */
   .story-section {
-    background-image: url('../../../images/storybg.png');
+    background-image: url('../../../images/storyBg2.png');
     color: #fff;
     padding: 114px 0;
     text-align: center;
@@ -168,6 +169,11 @@
   .card-image {
     width: 100px;
     height: 100px;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
   }
   
   .card-title {

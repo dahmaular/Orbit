@@ -7,9 +7,18 @@ import ServiceCard from "./ServiceCard";
 import InvestmentCard from "./InvestmentCard";
 import TechnologySection from "./TechnologySection";
 import DigitalExperience from "./DigitalExperience";
-import Footer from "./Footer";
-import '../styles/globals.css'
+import "../styles/globals.css";
+import "./styles.css";
 import Header from "../../components/Header";
+import Section from "./Section";
+import Button from "./Button";
+import Card from "./Card";
+import Footer from "../../components/Footer";
+import ServiceSection from "./ServiceSection";
+import imgservice from "../../../images/serv1.png";
+import imgInvest from "../../../images/investService.png";
+import imgInvoice from "../../../images/invoiceService.png";
+import imgGreen from "../../../images/green.png";
 
 const ServicesPage = () => {
   const services = [
@@ -106,21 +115,177 @@ const ServicesPage = () => {
     },
   ];
 
+  const eligibility = [
+    "Business Age: Minimum 1 year",
+    "Revenue: Minimum annual revenue of N1,000,000",
+    "Repayment capacity: Demonstrated ability to repay the loan",
+  ];
+
+  const application = [
+    "Step 1: Fill out the online application form",
+    "Step 2: Submit required documents (business registration, financial statements)",
+    "Step 3: Receive approval decision within 48 hours",
+  ];
+
+  const benefit = ["Ethical returns and positive impact on society"];
+
+  const investmentProcess = [
+    "Step 1: Create an investment account",
+    "Step 2: Choose from our portfolio of sustainable investment options",
+    "Step 3: Monitor and manage your investments online",
+  ];
+
+  const invoiceBenefit = ["Improve cash flow and manage working capital."];
+
+  const invoiceProcess = [
+    "Step 1: Submit your invoices online",
+    "Step 2: Get up to 80% of the invoice value advanced within 24 hours",
+    "Step 3:  Repay the advance once the invoice is paid by your customer",
+  ];
+
+  const susEligibility = [
+    "Projects focused on renewable energy, energy efficiency, waste management, etc.",
+    "Clear environmental impact and sustainability goals.",
+  ];
+
+  const susProcess = [
+    "Step 1: Submit a project proposal",
+    "Step 2:  Provide necessary documentation (business plan, environmental impact assessment)",
+    "Step 3:   Receive approval decision within 48 hours",
+  ];
+
   return (
     <div className="services-page">
       <Header />
       <main>
         <ServiceIntro />
-        <section className="services-section">
-          {services.map((service, index) => (
-            <ServiceCard key={index} {...service} />
-          ))}
-        </section>
-        <section className="investments-section">
-          {investments.map((investment, index) => (
-            <InvestmentCard key={index} {...investment} />
-          ))}
-        </section>
+        <div className="service-row">
+          <div className="service-item-row">
+            <div className="service-item-desc-column">
+              <p className="item-title-btn">Loan</p>
+              <p className="item-title-name">Microloans for Small Businesses</p>
+              <p className="item-title-subtitle">Description</p>
+              <p className="item-text-regular">
+                Tailored microloans to help small businesses grow without
+                needing collateral
+              </p>
+              <p className="item-title-subtitle">Eligibility Crieria</p>
+              <div>
+                <ul>
+                  {eligibility?.map((lst, index) => (
+                    <li key={index}>{lst}</li>
+                  ))}
+                </ul>
+              </div>
+              <p className="item-title-subtitle">Application Process</p>
+              <div>
+                <ul>
+                  {application?.map((lst, index) => (
+                    <li key={index}>{lst}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            <div className="service-item-img-column">
+              <img src={imgservice} className="img-service-item" />
+            </div>
+          </div>
+
+          {/*Investment*/}
+          <div className="service-item-row">
+            <div className="service-item-img-column">
+              <img src={imgInvest} className="img-service-item" />
+            </div>
+            <div className="service-item-desc-column">
+              <p className="item-title-btn">Investment</p>
+              <p className="item-title-name">Sustainable Investing</p>
+              <p className="item-title-subtitle">Description</p>
+              <p className="item-text-regular">
+                Offering investment opportunities aligned with environmental and
+                social values.
+              </p>
+              <p className="item-title-subtitle">Benefits</p>
+              <div>
+                <ul>
+                  {benefit?.map((lst, index) => (
+                    <li key={index}>{lst}</li>
+                  ))}
+                </ul>
+              </div>
+              <p className="item-title-subtitle">Application Process</p>
+              <div>
+                <ul>
+                  {investmentProcess?.map((lst, index) => (
+                    <li key={index}>{lst}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/*Invoice*/}
+          <div className="service-item-row">
+            <div className="service-item-desc-column">
+              <p className="item-title-btn">Invoicing</p>
+              <p className="item-title-name">Invoice Discounting</p>
+              <p className="item-title-subtitle">Description</p>
+              <p className="item-text-regular">
+                Advancing cash against outstanding invoices to improve cash
+                flow.
+              </p>
+              <p className="item-title-subtitle">Eligibility Crieria</p>
+              <div>
+                <ul>
+                  {invoiceBenefit?.map((lst, index) => (
+                    <li key={index}>{lst}</li>
+                  ))}
+                </ul>
+              </div>
+              <p className="item-title-subtitle">Application Process</p>
+              <div>
+                <ul>
+                  {invoiceProcess?.map((lst, index) => (
+                    <li key={index}>{lst}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            <div className="service-item-img-column">
+              <img src={imgInvoice} className="img-service-item" />
+            </div>
+          </div>
+
+          {/*Sustainability*/}
+          <div className="service-item-row">
+            <div className="service-item-img-column">
+              <img src={imgGreen} className="img-service-item" />
+            </div>
+            <div className="service-item-desc-column">
+              <p className="item-title-btn">Sustainability</p>
+              <p className="item-title-name">Green Financing</p>
+              <p className="item-title-subtitle">Description</p>
+              <p className="item-text-regular">
+                Financing environmentally sustainable projects.
+              </p>
+              <p className="item-title-subtitle">Eligibility Crieria</p>
+              <div>
+                <ul>
+                  {susEligibility?.map((lst, index) => (
+                    <li key={index}>{lst}</li>
+                  ))}
+                </ul>
+              </div>
+              <p className="item-title-subtitle">Application Process</p>
+              <div>
+                <ul>
+                  {susProcess?.map((lst, index) => (
+                    <li key={index}>{lst}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
         <TechnologySection />
         <DigitalExperience />
       </main>

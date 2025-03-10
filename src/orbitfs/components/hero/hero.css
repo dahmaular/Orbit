@@ -2,92 +2,111 @@
 
 .hero {
   display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  text-align: center;
-  background-image: url('../../../images/heroBg.png');
+  background-image: url("../../../images/HeroBg2.png");
   background-size: cover;
-  /* padding: 0 100px 0; */
-  /* padding-left: 100px; */
   gap: 20px;
+  /* desktop */
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  background-position: center;
+  align-items: center;
 }
 
 .hero-content {
-  max-width: 100%;
-  padding: 20px;
+  max-width: 50%;
+  /* padding: 20px; */
+  padding-left: 100px;
 }
 
 .hero-text {
-  margin: 0 auto;
+  text-align: left;
 }
 
 .hero-title {
-  font-size: 2rem;
-  line-height: 2.5rem;
-  margin-bottom: 10px;
+  font-size: 3rem;
+  line-height: 3.5rem;
   color: #fff;
 }
 
 .hero-subtitle {
-  font-size: 1rem;
-  margin-bottom: 20px;
+  font-size: 1.25rem;
   color: #fff;
 }
 
 .hero-cta {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  flex-direction: row;
+  gap: 20px;
 }
 
 .hero-images {
-  width: 100%;
+  max-width: 50%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-image2 {
   width: 100%;
   height: auto;
+  max-width: 100%;
+}
+
+/* Slider customization */
+.slider {
+  width: 100%;
+  max-width: 100%; /* Limit slider width on larger screens */
 }
 
 /* Mobile Responsive Styling */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .hero {
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
-    padding-left: 100px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
   }
 
   .hero-content {
-    max-width: 50%;
+    max-width: 100%;
+    padding: 20px;
   }
 
   .hero-text {
-    text-align: left;
+    margin: 0 auto;
   }
-
   .hero-title {
-    font-size: 3rem;
-    line-height: 3.5rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 10px;
     color: #fff;
   }
 
   .hero-subtitle {
-    font-size: 1.25rem;
+    font-size: 1rem;
+    margin-bottom: 20px;
     color: #fff;
   }
 
   .hero-cta {
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
   }
 
   .hero-images {
-    max-width: 50%;
+    width: 100%;
+    max-width: 100%;
   }
 
   .hero-image2 {
     width: 100%;
     height: auto;
+  }
+
+  .slider {
+    max-width: 100%; /* Ensure slider takes full width on mobile */
   }
 }

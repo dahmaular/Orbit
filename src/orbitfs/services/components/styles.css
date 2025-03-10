@@ -1,0 +1,343 @@
+:root {
+  --orbit-color-style-orbit-pry-blue-500: #00327e;
+  --orbit-color-style-slate-neutral-800: #0f172a;
+  --orbit-color-style-slate-neutral-200: #cbd5e1;
+  --success-50: #e7f6ec;
+  --orbit-color-style-orbit-sec-green-700: #559557;
+}
+
+/* body {
+    font-family: Effra, sans-serif;
+    background-color: #f8f8f8;
+    color: #666;
+    line-height: 1.5;
+  } */
+
+.financial-services {
+  padding: 34px 80px 82px;
+}
+
+.service-row {
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+.service-item-row {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically for mobile */
+  margin-bottom: 50px;
+  padding: 15px;
+}
+
+.service-item-desc-column {
+  width: 100%; /* Full width on mobile */
+  padding-left: 0;
+  padding-bottom: 20px;
+}
+
+.service-item-img-column {
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Full width on mobile */
+  padding: 0; /* Reduce padding for better fit on small screens */
+}
+
+.item-title-btn {
+  display: inline-block;
+  padding: 10px 15px;
+  border: 1px solid var(--orbit-color-style-orbit-pry-blue-500);
+  border-radius: 10px;
+  font-size: 18px; /* Slightly smaller font on mobile */
+  font-weight: 400;
+  color: var(--orbit-color-style-slate-neutral-800);
+}
+
+.item-title-name {
+  font-size: 22px;
+  font-weight: 500;
+  color: #666666;
+}
+
+.item-title-subtitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #666666;
+}
+
+.item-text-regular {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.img-service-item {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+.item-list {
+  line-height: 24px;
+}
+
+.item-title-amount {
+  width: 100%; /* Full width for mobile */
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 0;
+  z-index: 99;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+  .service-item-row {
+    flex-direction: row; /* Switch to horizontal layout on tablets and larger screens */
+  }
+
+  .service-item-desc-column {
+    width: 50%;
+    padding-left: 100px;
+  }
+
+  .service-item-img-column {
+    width: 50%;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .item-title-amount {
+    width: 70%;
+    margin-top: -50px;
+  }
+}
+
+@media (max-width: 991px) {
+  .financial-services {
+    padding: 20px;
+  }
+
+  /* .service-row {
+    padding: 0px;
+  }
+
+  .service-item-row {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service-item-desc-column {
+    max-width: 100%;
+    padding: 0 80px;
+  }
+
+  .service-item-img-column {
+    max-width: 100%;
+  } */
+}
+
+.loan-section,
+.investment-section,
+.invoicing-section,
+.green-financing-section {
+  margin-bottom: 40px;
+  max-width: 100%;
+  padding: 0 80px;
+}
+
+.loan-content,
+.investment-content,
+.invoicing-content,
+.green-financing-content {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.loan-info,
+.service-section {
+  flex: 1;
+  min-width: 240px;
+  max-width: 630px;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.loan-label,
+.service-title {
+  /* display: inline-block;
+  padding: 11px 12px;
+  border: 1px solid var(--orbit-color-style-orbit-pry-blue-500);
+  border-radius: 10px; */
+  font-size: 48px;
+  color: var(--orbit-color-style-slate-neutral-800);
+}
+
+.service-loan-title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 16px;
+}
+
+.loan-title,
+.service-subtitle {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 16px;
+}
+
+.section-heading {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 16px;
+}
+
+.service-description,
+.service-benefits,
+.process-step {
+  margin-top: 16px;
+}
+
+.process-list {
+  padding-left: 20px;
+}
+
+.cta-link {
+  display: inline-block;
+  margin-top: 16px;
+  color: var(--orbit-color-style-orbit-pry-blue-500);
+  text-decoration: underline;
+}
+
+.loan-image-container,
+.investment-card-container,
+.green-financing-card-container {
+  flex: 1;
+  min-width: 240px;
+  max-width: 640px;
+  position: relative;
+}
+
+.service-invoicing-image {
+  width: 50%;
+}
+
+.loan-image,
+.investment-image,
+.invoicing-image,
+.green-financing-image {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.loan-amount-card,
+.card {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border: 1px solid var(--orbit-color-style-slate-neutral-200);
+  border-radius: 10px;
+  padding: 16px;
+  width: 80%;
+  max-width: 489px;
+}
+
+.loan-type,
+.card-title {
+  font-size: 24px;
+  color: var(--orbit-color-style-slate-neutral-800);
+}
+
+.loan-amount,
+.card-amount {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--orbit-color-style-orbit-pry-blue-500);
+  margin-top: 16px;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-trend {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.badge {
+  background-color: var(--success-50);
+  border-radius: 12px;
+  padding: 2px 12px 2px 4px;
+  color: var(--orbit-color-style-orbit-sec-green-700);
+}
+
+.badge-content {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.trend-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.trend-label {
+  font-weight: 500;
+}
+
+.trend-period {
+  font-size: 18px;
+  color: var(--orbit-color-style-slate-neutral-800);
+}
+
+.card-icon {
+  width: 56px;
+  height: 48px;
+}
+
+.eligibility-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 16px;
+}
+
+.eligibility-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 16px;
+}
+
+.eligibility-list li {
+  margin-top: 8px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 991px) {
+  .loan-info,
+  .service-section,
+  .loan-image-container,
+  .investment-card-container,
+  .green-financing-card-container {
+    max-width: 100%;
+  }
+}

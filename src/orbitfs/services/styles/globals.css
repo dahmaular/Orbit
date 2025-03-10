@@ -63,7 +63,7 @@ body {
 }
 
 .logo-text {
-  width: 226px;
+  width: 280px;
 }
 
 .navigation {
@@ -116,7 +116,7 @@ body {
 /* Service Intro styles */
 .service-intro {
   background-color: #f2fbfa;
-  padding: 70px 50px;
+  padding: 70px 80px;
   text-align: center;
 }
 
@@ -326,11 +326,12 @@ body {
 
 /* Digital Experience styles */
 .digital-experience {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;*/
+  justify-content: center; 
   align-items: center;
-  padding: 21px 80px;
-  background-color: #fff;
+  padding: 100px 80px;
+  background-image: url("../../../images/grp2.png");
+  background-size: cover;
 }
 
 .experience-content {
@@ -379,11 +380,14 @@ body {
 
 .experience-image {
   flex: 1;
+  margin-top: 100px;
 }
 
 .experience-img {
   width: 100%;
-  max-width: 516px;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Footer styles */

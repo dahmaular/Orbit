@@ -6,7 +6,7 @@ const ServiceCard = ({ image, title, description, color }) => {
       <img loading="lazy" src={image} alt={title} className="service-icon" />
       <div className="service-content">
         <h3 className="service-title-new">{title}</h3>
-        <p className="value-description">{description}</p>
+        <p className="service-value-description">{description}</p>
       </div>
     </div>
   );

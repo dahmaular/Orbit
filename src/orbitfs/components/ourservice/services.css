@@ -1,7 +1,8 @@
 .our-services {
-    background-color: var(
+    /* background-color: var(
       --orbit-color-style-orbit-pry-blue-orbit-pry-blue-500-main
-    );
+    ); */
+    background-image: url('../../../images/servicesHomeBg.png');
     padding: 80px 80px;
     color: #fff;
   }
@@ -14,6 +15,16 @@
   
   .services-title {
     font-size: 48px;
+    margin: 0;
+  }
+
+  .home-service-title {
+    font-size: 28px;
+    margin: 0;
+  }
+
+  .home-service-description {
+    font-size: 22px;
     margin: 0;
   }
   
@@ -47,6 +58,7 @@
     align-items: center;
     gap: 24px;
     width: 100%;
+    animation: slide-in 0.5s ease-out forwards;
    /* margin: 0 auto;  */
   }
   
@@ -55,8 +67,9 @@
     border-radius: 10px;
     padding: 32px;
     width: 20%;
+    height: 304px;
     font-size: x-small;
-    /* max-height: 20rem; */
+    max-height: 20rem;
     color: var(--orbit-color-style-slate-neutral-slate-neutral-600);
   }
   
@@ -79,4 +92,15 @@
   .services-navigation {
     display: flex;
     gap: 24px;
+  }
+
+  @keyframes services-grid {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }

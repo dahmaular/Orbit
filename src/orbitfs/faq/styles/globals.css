@@ -180,7 +180,7 @@ body {
 }
 
 .contact-cta {
-  background-image: url('../../../images//faq.png');
+  background-image: url('../../../images/faqBg.png');
   background-size: cover;
   color: var(--white);
   text-align: center;
@@ -232,7 +232,8 @@ body {
 
 .footer-heading {
   color: #334155;
-  font-weight: 500;
+  font-weight: bold;
+  font-size: 18px;
   margin-bottom: 15px;
 }
 

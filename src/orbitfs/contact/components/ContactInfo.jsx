@@ -17,7 +17,10 @@ function ContactInfo() {
               className="info-icon"
             />
             <p className="info-text">
-              No 24, Ikorodu road, Iyana-Isashi Lagos State
+            Office Address:
+<br />
+              Orbit Financial Services Ltd Plot 1062 Abagbon Close, Victoria
+              Island, Lagos.
             </p>
           </div>
           <div className="info-item">
@@ -27,7 +30,7 @@ function ContactInfo() {
               alt="Email Icon"
               className="info-icon"
             />
-            <p className="info-text">Info@ofsl.com</p>
+            <p className="info-text">info@orbitfinancial.ng</p>
           </div>
           <div className="info-item">
             <img
@@ -36,7 +39,7 @@ function ContactInfo() {
               alt="Phone Icon"
               className="info-icon"
             />
-            <p className="info-text">+23480000000, +23480000001</p>
+            <p className="info-text">07040000014</p>
           </div>
         </div>
       </div>
@@ -49,10 +52,13 @@ function ContactInfo() {
           padding: 26px 70px;
           display: flex;
           justify-content: center;
+          width: 50%;
+          align-items: center;
         }
         @media (max-width: 991px) {
           .contact-info {
-            padding: 0 20px;
+            padding: 20px;
+            width: 100%;
           }
         }
         .info-container {

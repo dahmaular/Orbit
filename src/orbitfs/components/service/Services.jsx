@@ -13,7 +13,7 @@ const Services = () => {
       title: "Access to Affordable Financing",
       description:
         "We offer a variety of loan products, including microloans, working capital loans, and asset financing, with terms and repayment schedules tailored to the cash flow patterns of small businesses.",
-      color: "#00327E",
+      color: "#f7fff6",
     },
     {
       image:
@@ -21,7 +21,7 @@ const Services = () => {
       title: "Financial Advisory Services",
       description:
         "We offers personalized financial advisory services to help business owners make informed decisions. Our experts provide insights on budgeting, investment opportunities, and financial planning.",
-      color: "#020617",
+      color: "#e4f4fd",
     },
     {
       image:
@@ -29,7 +29,7 @@ const Services = () => {
       title: "Technology Integration",
       description:
         "We leverage the latest financial technology (fintech) to streamline processes, enhance security, and provide innovative solutions that improve the efficiency and effectiveness of financial services.",
-      color: "#427444",
+      color: "#f9f5ff",
     },
     {
       image:
@@ -37,7 +37,7 @@ const Services = () => {
       title: "Customer centric Approach",
       description:
         "We prioritize customer satisfaction by offering personalized service and dedicated support to address the unique needs of each business.",
-      color: "#001C45",
+      color: "#e8f0fe",
     },
   ];
 
@@ -45,14 +45,20 @@ const Services = () => {
     <section className="value-proposition">
       <div className="value-content">
         <div className="value-header">
-          <h2 className="value-title">Value Proposition</h2>
+          <h2 className="value-title">Our Value Proposition</h2>
         </div>
-        <div className="value-description">
-          <h3 className="value-subtitle">Help First, Sell Second!</h3>
+        <div className="service-value-description">
+          <h3 className="value-subtitle">Help First, Sell Later.</h3>
           <p className="value-text">
-            Orbit Financial Services Limited (OFSL) differentiates itself by
+            {/*Orbit Financial Services Limited (OFSL) differentiates itself by
             offering unique value and meeting specific customer needs with a
-            customer-centric approach
+            customer-centric approach*/}
+            Orbit Financial Services Limited's (OFSL) value proposition rests on
+            how well we use Artificial Intelligence (AI) to differentiate
+            ourselves from the market. Differentiation is about standing out in
+            a crowded market place. We are poised to offer financial services
+            with heart and empathy and determined to social-proof the
+            underserved by making financial services easily accessible.
           </p>
         </div>
       </div>

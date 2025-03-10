@@ -35,7 +35,7 @@ const ValuesSection = () => {
   return (
     <section className="values-section">
       <div className="container">
-        <h2 className="section-title">The Core Values of Orbit</h2>
+        <h2 className="about-section-title">The Core Values of Orbit</h2>
         <div className="values-container">
           <img
             loading="lazy"

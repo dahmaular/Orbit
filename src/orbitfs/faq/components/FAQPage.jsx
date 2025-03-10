@@ -6,9 +6,9 @@ import Hero from "./Hero";
 import FAQTabs from "./FAQTabs";
 import FAQList from "./FAQList";
 import ContactCTA from "./ContactCTA";
-import Footer from "./Footer";
 import '../styles/globals.css'
 import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 const FAQPage = () => (
   <div className="faq-page">
@@ -17,7 +17,7 @@ const FAQPage = () => (
       <Hero />
       <section className="faq-section">
         <FAQTabs />
-        <FAQList />
+        {/*<FAQList />*/}
       </section>
       <ContactCTA />
     </main>

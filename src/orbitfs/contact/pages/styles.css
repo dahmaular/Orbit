@@ -1,0 +1,88 @@
+:root {
+  --orbit-color-style-orbit-pry-blue-orbit-pry-blue-500-main: #010040;
+  --orbit-color-style-orbit-pry-blue-orbit-pry-blue-800: #001c45;
+  --orbit-color-style-orbit-pry-blue-orbit-pry-blue-50: #e6ebf2;
+  --orbit-color-style-tiffany-blue-tiffany-blue-500-main: #78d3ce;
+  --orbit-color-style-slate-neutral-slate-neutral-900: #020617;
+  --orbit-color-style-slate-neutral-slate-neutral-800: #0f172a;
+  --orbit-color-style-slate-neutral-slate-neutral-700: #1e293b;
+  --orbit-color-style-slate-neutral-slate-neutral-600: #334155;
+  --orbit-color-style-slate-neutral-slate-neutral-500: #475569;
+  --orbit-color-style-slate-neutral-slate-neutral-100: #e2e8f0;
+  --orbit-color-style-slate-neutral-slate-neutral-50: #f1f5f9;
+  --orbit-color-style-orbit-sec-green-orbit-sec-green-800: #427444;
+  --orbit-color-style-orbit-sec-green-orbit-sec-green-50: #f2fbf2;
+  --orbit-color-guide-gold-gold-800: #8c7600;
+  --orbit-color-guide-gold-gold-50: #fffbe6;
+  --orbit-color-guide-secondary-green-secondary-green-700: #005b00;
+  --orbit-color-guide-secondary-green-secondary-green-50: #e6f2e6;
+  --orbit-color-guide-neutral-gray-neutral-gray-800: #4f4f4f;
+  --orbit-color-guide-neutral-gray-neutral-gray-600: #838383;
+  --orbit-color-guide-background-text-background-text-200: #8a8a8a;
+}
+
+.main-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  padding: 236px 0;
+}
+
+.banner-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.banner-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 0px 50px;
+  max-width: 752px;
+}
+
+.banner-title {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.banner-description {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.contact-section {
+  background: var(
+    --orbit-color-style-orbit-pry-blue-orbit-pry-blue-500-main,
+    #010040
+  );
+  padding: 26px 70px;
+  display: flex;
+}
+
+@media (max-width: 991px) {
+  .contact-section {
+    padding: 0 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner-title {
+    font-size: 40px;
+  }
+
+  .main-banner {
+    padding: 100px 20px;
+  }
+}

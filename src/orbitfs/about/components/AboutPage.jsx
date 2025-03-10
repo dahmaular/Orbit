@@ -7,10 +7,10 @@ import StorySection from "./StorySection";
 import MissionVisionSection from "./MissionVisionSection";
 import TeamSection from "./TeamSection";
 import ValuesSection from "./ValuesSection";
-import Footer from "./Footer";
 import './styles.css'
 import Header from "../../components/Header";
 import OurStory from "./OurStory";
+import Footer from "../../components/Footer";
 
 const AboutPage = () => (
   <div className="about-page">
@@ -20,7 +20,7 @@ const AboutPage = () => (
       <StorySection />
       {/*<MissionVisionSection />
       <OurStory />*/}
-      <TeamSection />
+      {/*<TeamSection />*/}
       <ValuesSection />
     </main>
     <Footer />

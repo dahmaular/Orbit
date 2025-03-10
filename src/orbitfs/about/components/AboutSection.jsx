@@ -6,7 +6,7 @@ import React from "react";
 const AboutSection = () => (
   <section className="about-section">
     <div className="container">
-      <h1 className="section-title">About Us</h1>
+      <h1 className="about-section-title">About Us</h1>
       <p className="section-description">
         Orbit Financial Services Limited (OFSL) was founded with the mission to
         empower Nigerian small businesses by providing access to funds through
