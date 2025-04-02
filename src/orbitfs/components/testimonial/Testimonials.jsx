@@ -26,9 +26,9 @@ const Testimonials = () => {
       author: "Chinyere Akerele",
     },
     {
-      rating: 3,
+      rating: 4.5,
       content:
-        "Orbit helped my business grow when no one else would. The loan I received from Orbit helped me when I was in a tight financial situation. Most importantly, the loans come in time. As soon as it is approved, you receive your money. Thank you Orbit, you are the best!",
+        "Orbit provided the financial boost my business needed at the right time. The loan process was simple, approval was fast, and funds were disbursed quickly. Their reliable service made a real difference. Highly recommended!",
       author: "Chisom Agun",
     },
   ];

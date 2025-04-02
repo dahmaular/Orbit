@@ -93,7 +93,7 @@ const Footer = () => {
             </a>
           </div>
           <p className="copyright">
-            © Copyright 2024 Orbit All rights reserved. Crafted by Codakraft
+            © Copyright 2025 Orbit All rights reserved. Crafted by Codakraft
             Tech.
           </p>
         </div>
